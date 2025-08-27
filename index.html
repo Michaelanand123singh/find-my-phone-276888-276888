@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find My Phone | Never Lose Your Device Again</title>
+  <meta name="description" content="Locate your lost phone quickly and easily with our advanced tracking technology. Designed for individuals, families, and seniors.">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Find My Phone | Never Lose Your Device Again">
+  <meta property="og:description" content="Locate your lost phone quickly and easily with our advanced tracking technology. Designed for individuals, families, and seniors.">
+  <meta property="og:image" content="/uploads/hero_image.jpg"> <!-- Replace with your image URL -->
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Find My Phone | Never Lose Your Device Again">
+  <meta property="twitter:description" content="Locate your lost phone quickly and easily with our advanced tracking technology. Designed for individuals, families, and seniors.">
+  <meta property="twitter:image" content="/uploads/hero_image.jpg"> <!-- Replace with your image URL -->
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"> <!-- Replace with your favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <!-- Replace with your apple touch icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <!-- Replace with your favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Replace with your favicon -->
+  <link rel="manifest" href="/site.webmanifest">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3B82F6', // Blue-500
+            secondary: '#64748B', // Gray-500
+            accent: '#10B981', // Green-500
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Find My Phone",
+      "url": "https://www.findmyphone.com", <!-- Replace with your URL -->
+      "logo": "https://www.findmyphone.com/uploads/logo_1755747301.png", <!-- Replace with your logo URL -->
+      "description": "The leading platform for finding lost phones.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Anytown",
+        "addressRegion": "CA",
+        "postalCode": "91234",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-123-4567",
+        "contactType": "customer service",
+        "areaServed": "US",
+        "availableLanguage": ["en"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/findmyphone", <!-- Replace with your Facebook URL -->
+        "https://twitter.com/findmyphone", <!-- Replace with your Twitter URL -->
+        "https://www.linkedin.com/company/findmyphone" <!-- Replace with your LinkedIn URL -->
+      ]
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-700">
+
+  <!-- Sticky Navigation Header -->
+  <header role="banner" class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300" aria-label="Navigation">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="/" aria-label="Find My Phone Homepage">
+            <img src="/uploads/logo_1755747301.png" alt="Find My Phone Logo" class="h-10 w-auto">
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#about" class="hover:text-primary transition-colors duration-200">About Us</a>
+          <a href="#features" class="hover:text-primary transition-colors duration-200">Features</a>
+          <a href="#contact" class="hover:text-primary transition-colors duration-200">Contact</a>
+          <a href="#faq" class="hover:text-primary transition-colors duration-200">FAQ</a>
+          <a href="#" class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors duration-200">Get Started</a>
+        </div>
+        <button class="md:hidden mobile-menu-btn" aria-label="Toggle Menu">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div class="mobile-menu hidden md:hidden bg-white shadow-md absolute top-full left-0 w-full py-4 px-6 space-y-3">
+        <a href="#about" class="block hover:text-primary transition-colors duration-200">About Us</a>
+        <a href="#features" class="block hover:text-primary transition-colors duration-200">Features</a>
+        <a href="#contact" class="block hover:text-primary transition-colors duration-200">Contact</a>
+        <a href="#faq" class="block hover:text-primary transition-colors duration-200">FAQ</a>
+        <a href="#" class="block bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors duration-200 text-center">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" role="region" aria-labelledby="hero-title" class="py-20 bg-gray-50">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 id="hero-title" class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+        Never Lose Your Phone Again
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-600 mb-8">
+        Our advanced phone tracking technology helps you locate your device quickly and easily, giving you peace of mind.
+      </p>
+      <div class="flex items-center justify-center space-x-4">
+        <a href="#" class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200">
+          Find My Phone Now
+        </a>
+        <a href="#features" class="text-primary hover:text-blue-700 font-semibold transition-colors duration-200">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof Badges -->
+  <section id="social-proof" role="region" aria-label="Social Proof" class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+        <img src="https://via.placeholder.com/150x50.png?text=Badge+1" alt="Badge 1" class="h-12 w-auto">
+        <img src="https://via.placeholder.com/150x50.png?text=Badge+2" alt="Badge 2" class="h-12 w-auto">
+        <img src="https://via.placeholder.com/150x50.png?text=Badge+3" alt="Badge 3" class="h-12 w-auto">
+        <img src="https://via.placeholder.com/150x50.png?text=Badge+4" alt="Badge 4" class="h-12 w-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" role="region" aria-labelledby="features-title" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 id="features-title" class="text-3xl font-bold text-gray-900 mb-12 text-center">
+        Key Features
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            Real-time Tracking
+          </h3>
+          <p class="text-gray-600">
+            Pinpoint the exact location of your phone on a map, even when it's turned off.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            Sound Alert
+          </h3>
+          <p class="text-gray-600">
+            Trigger a loud alarm on your phone, even if it's on silent.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            Remote Lock & Wipe
+          </h3>
+          <p class="text-gray-600">
+            Protect your data by remotely locking or wiping your phone if it's lost or stolen.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            Safe Zones
+          </h3>
+          <p class="text-gray-600">
+            Set up safe zones and receive alerts when your phone enters or leaves these areas.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            Low Battery Mode
+          </h3>
+          <p class="text-gray-600">
+            Optimize battery usage for accurate tracking, even when your phone is running low.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            Family Sharing
+          </h3>
+          <p class="text-gray-600">
+            Keep track of your family members' phones and ensure their safety.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" role="region" aria-labelledby="benefits-title" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 id="benefits-title" class="text-3xl font-bold text-gray-900 mb-8">
+        Why Choose Find My Phone?
+      </h2>
+      <p class="text-lg text-gray-600 mb-6">
+        Our platform offers unparalleled accuracy, reliability, and security. We are committed to providing you with the best phone tracking experience.
+      </p>
+      <ul class="space-y-4">
+        <li class="flex items-center justify-center">
+          <svg class="h-6 w-6 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Accurate and Reliable Tracking
+        </li>
+        <li class="flex items-center justify-center">
+          <svg class="h-6 w-6 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Secure and Private Data Protection
+        </li>
+        <li class="flex items-center justify-center">
+          <svg class="h-6 w-6 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Easy to Use Interface
+        </li>
+        <li class="flex items-center justify-center">
+          <svg class="h-6 w-6 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          24/7 Customer Support
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Use-Case Cards -->
+  <section id="use-cases" role="region" aria-labelledby="use-cases-title" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 id="use-cases-title" class="text-3xl font-bold text-gray-900 mb-12 text-center">
+        How Find My Phone Helps
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+          <img src="https://via.placeholder.com/400x200.png?text=Use+Case+1" alt="Use Case 1" class="mb-4 rounded-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            Protecting Seniors
+          </h3>
+          <p class="text-gray-600">
+            Ensure the safety of elderly family members by quickly locating their phones in case of emergency.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+          <img src="https://via.placeholder.com/400x200.png?text=Use+Case+2" alt="Use Case 2" class="mb-4 rounded-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            Keeping Families Connected
+          </h3>
+          <p class="text-gray-600">
+            Stay connected with your family members and ensure their safety with real-time tracking and safe zone alerts.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+          <img src="https://via.placeholder.com/400x200.png?text=Use+Case+3" alt="Use Case 3" class="mb-4 rounded-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">
+            Recovering Lost Devices
+          </h3>
+          <p class="text-gray-600">
+            Quickly locate and recover lost or stolen phones, saving you time and money.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Slider (Static HTML) -->
+  <section id="testimonials" role="region" aria-labelledby="testimonials-title" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 id="testimonials-title" class="text-3xl font-bold text-gray-900 mb-8 text-center">
+        What Our Customers Say
+      </h2>
+      <div class="text-center">
+        <p class="text-xl italic text-gray-600 mb-4">
+          "Find My Phone has been a lifesaver! I lost my phone at the park, and I was able to find it within minutes using the app."
+        </p>
+        <p class="font-semibold text-gray-800">
+          Jane Doe
+        </p>
+        <p class="text-gray-500">
+          Happy Customer
+        </p>
+      </div>
+      <!-- Add more testimonial blocks here -->
+    </div>
+  </section>
+
+  <!-- Pricing (SAAS) - Example Usage of a Pricing Pattern -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Choose Your Plan</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="border rounded-lg p-8 ">
+                <h3 class="text-xl font-semibold mb-4">Basic</h3>
+                <div class="text-3xl font-bold mb-6">$9<span class="text-gray-500 text-base">/month</span></div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Real-time Tracking</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>1 Device</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Basic Support</li>
+                </ul>
+                <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Get Started</button>
+            </div>
+            <div class="border rounded-lg p-8 border-blue-500 relative">
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Most Popular</div>
+                <h3 class="text-xl font-semibold mb-4">Standard</h3>
+                <div class="text-3xl font-bold mb-6">$19<span class="text-gray-500 text-base">/month</span></div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Real-time Tracking</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Up to 5 Devices</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Priority Support</li>
+                </ul>
+                <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Get Started</button>
+            </div>
+            <div class="border rounded-lg p-8 ">
+                <h3 class="text-xl font-semibold mb-4">Premium</h3>
+                <div class="text-3xl font-bold mb-6">$29<span class="text-gray-500 text-base">/month</span></div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Real-time Tracking</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Unlimited Devices</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>24/7 Premium Support</li>
+                </ul>
+                <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Get Started</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- FAQ Accordion -->
+  <section id="faq" role="region" aria-labelledby="faq-title" class="py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 id="faq-title" class="text-3xl font-bold text-gray-900 mb-12 text-center">
+        Frequently Asked Questions
+      </h2>
+      <div class="space-y-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <button class="w-full text-left font-semibold text-gray-800 focus:outline-none" aria-expanded="false">
+            What devices are compatible with Find My Phone?
+          </button>
+          <div class="mt-2 text-gray-600 hidden">
+            Find My Phone is compatible with all iOS and Android devices.
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <button class="w-full text-left font-semibold text-gray-800 focus:outline-none" aria-expanded="false">
+            Is Find My Phone safe and secure?
+          </button>
+          <div class="mt-2 text-gray-600 hidden">
+            Yes, Find My Phone uses advanced encryption to protect your data and privacy.
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <button class="w-full text-left font-semibold text-gray-800 focus:outline-none" aria-expanded="false">
+            How accurate is the location tracking?
+          </button>
+          <div class="mt-2 text-gray-600 hidden">
+            Our location tracking is highly accurate, using GPS, Wi-Fi, and cellular data to pinpoint your phone's location.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+    <div class="py-16 bg-blue-600">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Keep Your Phone Safe?</h2>
+            <p class="text-xl text-blue-100 mb-8">Start protecting your device and enjoy peace of mind with Find My Phone.</p>
+            <a href="#" class="bg-white hover:bg-gray-100 text-blue-600 px-8 py-3 rounded-lg font-semibold transition-colors">Get Started Today</a>
+        </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-bold text-lg mb-4">Find My Phone</h3>
+          <p class="text-gray-400">Your trusted partner in phone security. Protecting your devices and data, ensuring peace of mind.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+            <li><a href="#pricing" class="text-gray-400 hover:text-white">Pricing</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="#faq" class="text-gray-400 hover:text-white">FAQ</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Connect</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Facebook</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 Find My Phone. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
